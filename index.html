@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="intro">
+      <div class="text">
+        <h2>AWARD WINNING</h2>
+        <h1>DIGITAL MARKETING AGENCY</h1>
+        <p>
+          We are Fyle, a SaaS product startup based out of Bangalore are founded
+          by startup veterans. We are building a first-of-its-kind expense
+          management product for enterprises around the world.
+        </p>
+        <button id="contactus">CONTACT US</button>
+      </div>
+      <img src="fyle.png" alt="" />
+    </section>
+
+    <section id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <form id="myForm" action="https://getform.io/f/qblodeoa " method="POST">
+          <h2 class="center">Talk to Us</h2>
+          <input type="email" name="email" placeholder="Your Email" required />
+          <br />
+          <div class="names">
+            <input
+              type="text"
+              name="firstName"
+              placeholder="First Name"
+              required
+            />
+            <input
+              type="text"
+              name="lastName"
+              placeholder="Last Name"
+              required
+            />
+          </div>
+          <br />
+          <label for="condition"></label>
+          <input type="checkbox" id="condition" name="condition" required />
+          <span
+            >I agree to Fyle's terms and conditions, and provide consent to send
+            me communication.</span
+          >
+          <br />
+          <div class="centerbtn">
+            <button type="submit">CONTACT US</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="whatwedo">
+      <div class="text-cont">
+        <div class="text">
+          <h3>WHAT WE DO</h3>
+          <h2>SERVICES PROVIDED <br />FOR YOU</h2>
+        </div>
+        <div class="text">
+          <p>
+            Fyle provides automated expense management, integration with
+            accounting software and corporate cards, real-time policy checks,
+            and advanced analytics for streamlined financial control and
+            compliance.
+          </p>
+        </div>
+      </div>
+      <div class="container-slide">
+        <div class="sliders">
+          <div class="image-container">
+            <img src="image-1.jpeg" alt="image-1" />
+            <div class="overlay">
+              <a href="https://fylehq.com" target="_blank" class="read-more"
+                >Read More</a
+              >
+            </div>
+          </div>
+          <div class="image-container">
+            <img src="image-2.jpeg" alt="image-2" />
+            <div class="overlay">
+              <a href="https://fylehq.com" target="_blank" class="read-more"
+                >Read More</a
+              >
+            </div>
+          </div>
+          <div class="image-container">
+            <img src="image-3.jpg" alt="image-3" />
+            <div class="overlay">
+              <a href="https://fylehq.com" target="_blank" class="read-more"
+                >Read More</a
+              >
+            </div>
+          </div>
+          <div class="image-container">
+            <img src="image-4.jpeg" alt="image-4" />
+            <div class="overlay">
+              <a href="https://fylehq.com" target="_blank" class="read-more"
+                >Read More</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+    </section>
+    <section class="choose">
+      <h3 class="head">WHY CHOOSE US</h3>
+      <h2>WHY WE ARE BEST</h2>
+      <div class="four">
+        <div class="sec3">
+          <img src="vision.png" alt="" />
+          <p class="head">Clarified Vision & Target</p>
+          <p>
+            Envisions streamlining expense management with automation while
+            targeting improved efficiency and cost savings for businesses.
+          </p>
+        </div>
+        <div class="sec3">
+          <img src="performace.png" alt="" />
+          <p class="head">High Performance</p>
+          <p>
+            Achieves high performance by leveraging advanced technologies like
+            AI and machine learning for seamless expense management.
+          </p>
+        </div>
+        <div class="sec3">
+          <img src="security.png" alt="" />
+          <p class="head">Maintain Security</p>
+          <p>
+            Maintains security through encryption protocols and continuous
+            monitoring, ensuring integrity of financial data.
+          </p>
+        </div>
+        <div class="sec3">
+          <img src="strategy.png" alt="" />
+          <p class="head">Better Strategy & Quality</p>
+          <p>
+            Adopts a proactive strategy by prioritizing user feedback and
+            industry trends to enhance its expense management platform.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="our-project">
+      <div class="text">
+        <h3>OUR PROJECT</h3>
+        <h2>WHY WE ARE BEST</h2>
+      </div>
+
+      <div class="container">
+        <div class="image">
+          <img id="mainImg" src="main.jpeg" alt="main" />
+        </div>
+        <div class="content">
+          <div class="info" data-img="image1" onclick="changeImg('image1')">
+            <h4>Integration Enhancement:</h4>
+            <p>
+              Enhancing Fyle's integration capabilities like streamlining
+              accounting software integration.
+            </p>
+          </div>
+          <div
+            class="info"
+            data-img="image2"
+            onclick="changeImg('image2')"
+            style="background-color: #f5f5f5"
+          >
+            <h4>Mobile App Upgrade</h4>
+            <p>
+              Ensuring data security standards like improved receipt scanning
+              features.
+            </p>
+          </div>
+          <div class="info" data-img="image3" onclick="changeImg('image3')">
+            <h4>Compliance Audit</h4>
+            <p>
+              Conducting a comprehensive audit ensuring data security standards.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="growth">
+      <div class="text">
+        <h3>EXPERT GROWTH</h3>
+        <h2>OUR COMPANY GROWTH</h2>
+      </div>
+      <div class="container">
+        <div class="card">
+          <div class="card-content">
+            <span class="symbol">&#10084;</span>
+            <p class="number">199+</p>
+            <p class="line">Satisfied Customers</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <span class="symbol">&#x23F0;</span>
+            <p class="number">1591+</p>
+            <p class="line">Days Of Operation</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <span class="symbol">&#x2714;</span>
+            <p class="number">283+</p>
+            <p class="line">Complete Project</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <span class="symbol">&#x1F3C6;</span>
+            <p class="number">75+</p>
+            <p class="line">Win Award</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="feedback">
+      <h3>CLIENT'S FEEDBACK</h3>
+      <h2>PEOPLE SAY'S ABOUT US !</h2>
+      <p>
+        Jannat Tumpa The standard chunk of Loreum Ipsum used since the 1500s is
+        reproduced below for those interested. Sections Bonorum et Molorum
+        original.
+      </p>
+      <h5>JANNAT TUMPA - <span>COO, AMERIMAR ENTERPRISES, INC.</span></h5>
+    </section>
+    <section class="footer">
+      <img src="foot.png" alt="" />
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>

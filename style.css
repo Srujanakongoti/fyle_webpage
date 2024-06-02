@@ -1,0 +1,413 @@
+* {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+.intro .text h1 {
+  color: black;
+  margin-top: 10px;
+}
+.intro .text h2 {
+  color: red;
+}
+.intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 150px;
+  width: 100%;
+  min-width: 1000px;
+  height: auto;
+  margin-top: 50px;
+}
+.intro .text p {
+  margin-top: 25px;
+}
+.text {
+  flex: 1; /* Takes up remaining space */
+  padding-right: 30px;
+  font-size: large;
+  text-align: justify;
+}
+.intro #contactus {
+  background-color: orange;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 20px;
+}
+.intro img {
+  height: auto;
+  max-width: 100%;
+  height: 450px;
+  width: 400px;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 40px 50px;
+  width: 50%;
+  max-width: 1000px;
+  border: 5px solid black;
+  padding-top: 30px;
+}
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 30px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  text-decoration: none;
+  cursor: pointer;
+}
+input[type="email"] {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+  box-sizing: border-box;
+  display: inline-block;
+  font-size: medium;
+}
+.modal span {
+  padding: 10px;
+  width: 100%;
+  font-size: medium;
+}
+.names {
+  display: flex;
+}
+input[type="text"] {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  display: inline-block;
+  width: calc(50% - 5px);
+  margin-right: 10px;
+  padding: 8px; /* Padding */
+  box-sizing: border-box; /* Include padding in width */
+  font-size: medium;
+}
+
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+label {
+  margin-right: 10px;
+}
+#myModal .modal-content .center {
+  color: black;
+  font-size: 25px;
+  text-align: center;
+}
+button[type="submit"] {
+  background-color: red;
+  color: white;
+  align-items: center;
+  border: none;
+  padding: 15px;
+  width: 100%;
+  margin-top: 20px;
+}
+.whatwedo .text-cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+}
+.whatwedo .text-cont .text {
+  width: 50%;
+  margin-top: 50px;
+}
+.whatwedo .text-cont .text p {
+  font-size: medium;
+}
+.whatwedo .text-cont .text h2 {
+  color: black;
+  margin-top: 10px;
+}
+.whatwedo .text-cont .text h3 {
+  color: red;
+  margin-top: 10px;
+}
+.whatwedo {
+  position: relative;
+  padding: 0 150px;
+  min-width: 1000px;
+  width: 100%;
+  background-color: aliceblue;
+  margin-top: 50px;
+}
+
+.whatwedo .container-slide {
+  position: relative;
+  overflow: hidden;
+}
+.whatwedo .container-slide .sliders {
+  display: flex;
+  transition: transform 0.3s ease;
+  width: max-content;
+}
+
+.whatwedo .container-slide .sliders .image-container {
+  position: relative;
+  height: 400px;
+  width: 300px;
+  margin-right: 20px;
+  margin-top: 30px;
+}
+
+.whatwedo .container-slide .sliders img {
+  height: 100%;
+  width: 100%;
+}
+
+.whatwedo .container-slide .sliders .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.whatwedo .container-slide .sliders .overlay .read-more {
+  padding: 10px 20px;
+  background-color: orange;
+  color: #333;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.whatwedo .container-slide .sliders .image-container:hover .overlay {
+  opacity: 1;
+}
+
+.whatwedo .dots {
+  left: 12px;
+  z-index: 1;
+  margin-bottom: 50px;
+}
+
+.whatwedo .dots .dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.whatwedo .dots .dot.active {
+  background-color: #333;
+}
+.choose {
+  min-width: 1000px;
+  margin-top: 50px;
+  width: 100%;
+  padding: 0 150px;
+}
+.choose h2 {
+  color: black;
+  margin-top: 10px;
+  text-align: center;
+}
+.choose h3 {
+  margin-top: 10px;
+  color: red;
+  text-align: center;
+}
+.choose .four {
+  display: flex;
+}
+.choose .sec3 {
+  width: 25%;
+  padding: 0px 10px;
+  box-sizing: border-box;
+  margin-top: 35px;
+}
+.choose .sec3 p {
+  margin-top: 10px;
+}
+.choose .sec3 img {
+  width: 90px;
+  height: 90px;
+}
+.choose .sec3 .head {
+  color: red;
+  font-size: large;
+  font-weight: 400;
+}
+.our-project {
+  min-width: 1000px;
+  margin-top: 50px;
+  width: 100%;
+  position: relative;
+  padding: 0 150px;
+}
+.our-project .text h3 {
+  text-align: center;
+  justify-content: center;
+  color: black;
+}
+.our-project .text h2 {
+  text-align: center;
+  justify-content: center;
+  color: red;
+  margin-top: 10px;
+}
+.our-project .container {
+  display: flex;
+  justify-content: space-between;
+  height: auto;
+}
+.our-project .container .image {
+  margin-top: 30px;
+  object-fit: contain;
+  height: 450px;
+}
+.our-project .container .content {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  margin-top: 30px;
+  margin-left: 10px;
+  height: 450px;
+}
+.our-project .container .info {
+  cursor: pointer;
+  padding: 35px;
+  box-sizing: border-box;
+  background-color: lavender;
+  overflow: auto;
+  height: 150px;
+}
+.our-project .container .image img {
+  height: 450px;
+  width: 520px;
+  margin-right: 5px;
+}
+
+.growth {
+  background-color: #f5f5f5;
+  margin-top: 50px;
+  width: 100%;
+  min-width: 1000px;
+}
+.growth .text {
+  text-align: center;
+}
+.growth .text h2 {
+  color: black;
+  margin-top: 10px;
+}
+.growth .text h3 {
+  color: red;
+  padding-top: 70px;
+}
+.growth .card .card-content .number {
+  color: black;
+  font-size: 24px;
+}
+.growth .container {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-bottom: 70px;
+}
+.growth .card {
+  width: 200px;
+  height: 150px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  margin-top: 30px;
+  margin-left: 5px;
+}
+.growth .card:hover {
+  transform: translateY(-10px);
+}
+
+.growth .card-content {
+  text-align: center;
+  padding: 10px;
+}
+.growth .container .card .card-content .number {
+  font-size: xx-large;
+}
+.growth .container .card .card-content .symbol {
+  color: red;
+  font-size: x-large;
+}
+.symbol,
+.number,
+.line {
+  margin: 5px 0; /* Adjust margin to reduce vertical spacing */
+}
+.feedback {
+  padding: 20px;
+  margin-top: 40px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  min-width: 1000px;
+}
+.feedback h2 {
+  color: black;
+  text-align: center;
+  margin-top: 10px;
+}
+.feedback h3 {
+  color: red;
+  text-align: center;
+  margin-top: 50px;
+}
+.feedback p {
+  text-align: center;
+  justify-content: center;
+  font-size: medium;
+  margin-top: 25px;
+  padding: 0 300px;
+}
+.feedback h5 {
+  color: blue;
+  text-align: center;
+  margin-top: 10px;
+}
+.feedback h5 span {
+  color: #ccc;
+  text-align: center;
+}
+.footer {
+  margin-top: 50px;
+}
+.footer img {
+  margin-top: 50px;
+  min-width: 1000px;
+  height: 200px;
+  width: 100%;
+}
